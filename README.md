@@ -1,6 +1,6 @@
 # Site-Instituciocal
 Desenvolvi este projeto com intuito de comercializar na minha empresa esse site esta bem estriturado e com uma boa responsividade
-=======
+--------------------------------------------------------------------------------------------------------------------------------------------
 ﻿## 🧾 Landing Page - João Pedroso
 
 Landing Page profissional completo com os meus compormissoas e mais um meio de prospectar cliente.
