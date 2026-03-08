@@ -19,9 +19,9 @@ Landing Page profissional completo com os meus compormissoas e mais um meio de p
 - Envio de contato pelo meu email
 
 ## 📷 Preview
-![Preview](./public/img/preview.png)
+![Preview](./public/img/Preview.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-![Preview](./public/img/preview2.png)
+![Preview](./public/img/Preview2.png)
 
 ## 🔗 Demo
 https://desenvolvedor-jp.netlify.app
