@@ -1,0 +1,190 @@
+/* ============================================
+   SISTEMA DE CORES CUSTOMIZÁVEL
+   Altere as variáveis abaixo para personalizar
+   todas as cores do site
+   ============================================ */
+
+:root {
+  /* ===== CORES PRINCIPAIS ===== */
+  --primary-color: #2563eb;           /* Cor principal (botões, links, destaques) */
+  --primary-hover: #1d4ed8;           /* Hover da cor principal */
+  --primary-light: #dbeafe;           /* Versão clara da cor principal */
+  
+  --secondary-color: #1e40af;         /* Cor secundária */
+  --secondary-hover: #1e3a8a;         /* Hover da cor secundária */
+  
+  --accent-color: #f59e0b;            /* Cor de destaque/acento */
+  --accent-hover: #d97706;            /* Hover da cor de destaque */
+  
+  /* ===== CORES DE FUNDO ===== */
+  --bg-primary: #ffffff;              /* Fundo principal (branco) */
+  --bg-secondary: #f8fafc;            /* Fundo secundário (cinza muito claro) */
+  --bg-dark: #1e293b;                 /* Fundo escuro */
+  --bg-darker: #0f172a;               /* Fundo mais escuro */
+  
+  /* ===== CORES DE CONTAINERS/CARDS ===== */
+  --card-bg: #ffffff;                 /* Fundo dos cards */
+  --card-border: #e2e8f0;             /* Borda dos cards */
+  --card-shadow: rgba(0, 0, 0, 0.1);  /* Sombra dos cards */
+  --card-hover-shadow: rgba(37, 99, 235, 0.2); /* Sombra no hover */
+  
+  /* ===== CORES DE TEXTO ===== */
+  --text-primary: #1e293b;            /* Texto principal */
+  --text-secondary: #64748b;          /* Texto secundário */
+  --text-muted: #94a3b8;              /* Texto menos importante */
+  --text-light: #ffffff;              /* Texto claro (para fundos escuros) */
+  
+  /* ===== CORES DE BOTÕES ===== */
+  --btn-primary-bg: var(--primary-color);
+  --btn-primary-hover: var(--primary-hover);
+  --btn-primary-text: #ffffff;
+  
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: var(--primary-color);
+  --btn-secondary-text: var(--primary-color);
+  --btn-secondary-hover-bg: var(--primary-light);
+  
+  --btn-accent-bg: var(--accent-color);
+  --btn-accent-hover: var(--accent-hover);
+  --btn-accent-text: #ffffff;
+  
+  /* ===== CORES DE GRADIENTE ===== */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, #ef4444 100%);
+  --gradient-overlay: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
+  
+  /* ===== CORES DE FEEDBACK ===== */
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+  --info-color: #3b82f6;
+  
+  /* ===== OUTRAS CONFIGURAÇÕES ===== */
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+  --transition: all 0.3s ease;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   RESET E ESTILOS BASE
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   ANIMAÇÕES GLOBAIS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* ============================================
+   CLASSES UTILITÁRIAS
+   ============================================ */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   SCROLL SUAVE
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
