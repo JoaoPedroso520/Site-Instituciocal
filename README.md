@@ -14,9 +14,9 @@ Landing Page profissional completo com os meus compormissoas e mais um meio de p
 
 ## 📦 Funcionalidades
 - Landing Page
-- Não tem acesso à ferramenta de desenvolvedor
+- Modelo de site institucional
 - Layout personalizado
-- Envio de contato pelo meu email
+- Envio de contato pelo meu WhatsApp
 
 ## 📷 Preview
 ![Preview](./public/img/Preview.png)
