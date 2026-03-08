@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Site-Instituciocal
 Desenvolvi este projeto com intuito de comercializar na minha empresa esse site esta bem estriturado e com uma boa responsividade
 =======
@@ -26,4 +25,4 @@ Landing Page profissional completo com os meus compormissoas e mais um meio de p
 
 ## 🔗 Demo
 https://desenvolvedor-jp.netlify.app
->>>>>>> 1030924 (feat: initial portfolio site)
+
